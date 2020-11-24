@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Palatino; /* Имя шрифта */
+    src: url(../fonts/palabi_0.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: TrajanPro3; /* Имя шрифта */
+    src: url(../fonts/TrajanPro3-Regular.otf); /* Путь к файлу со шрифтом */
+   }
+
+body{
+	/*background: url(../images/background-images.jpg) no-repeat center center fixed;*/
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+}
+h2{
+	font-family: Palatino;
+	font-style: italic;
+	font-size: 32px;
+	font-weight: 100;
+	color: #a04c5b;
+}
+.form-temp{
+	position: relative;
+	width: 300px;
+	height: 600x;
+	padding: 19px 29px 29px;
+    margin: 30px auto 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+   webkit-clip-path: polygon(15% 0, 85% 0, 100% 10%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 1% 10%);
+    clip-path: polygon(15% 0, 85% 0, 100% 10%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0% 10%);
+}
+.form-temp-2{
+	position: relative;
+    border: 3px solid #a04c5b;
+	margin: 6px;
+	padding: 20px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 530px;
+    /*overflow-y: auto;*/
+    /*overflow: -webkit-paged-y;*/
+
+}
+.form-temp-2:before {
+  border-right: 3px solid #a04c5b;
+    width: 52px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    transform: rotate(42deg);
+    left: -31px;
+    top: -25px;
+    background: #fff;
+}
+.form-temp-2:after {
+      border-right: 3px solid #a04c5b;
+    width: 52px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    transform: rotate(138deg);
+    right: -31px;
+    top: -25px;
+    background: #fff;
+}
+.scroll-adaptiv{
+	height: 450px;
+	overflow: auto;
+}
+.right-temp{
+float: right;
+margin-right: 20px;
+}
+.left-temp{
+float: left;
+margin-left: 20px;
+}
+.form-temp-right{
+	position: relative;
+	width: 300px;
+	height: 600px;
+	padding: 20px;
+    margin: 30px auto 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    border: 5px solid #a04c5b;
+     
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-temp-2-right{
+    margin: 6px;
+	padding: 20px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 493px;
+}
+.paypal-button{
+    text-align: right;
+    width: 50%;
+    float: left;
+}
+.paypal-button-2{
+    text-align: center;
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.paypal-button-2 input[type="image"]{
+    max-width: 200px;
+    height: auto;
+}
+.paypal-button input[type="image"]{
+    max-width: 200px;
+    height: auto;
+}
+
+    
+.text-form{
+    margin-top: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.47);
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.text-form p{
+    font-family: TrajanPro3;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1;
+    color: #fff;
+}
+.text-border{
+    position: absolute;
+    bottom: -3%;
+    left: 12%;
+    height: 30px;
+    width: 172px;
+    background: url(../images/templvm.png) no-repeat;
+}
+
+@media all and (max-width: 767px){
+body {
+    padding-right: 7px !important;
+    padding-left: 7px !important;
+}
+} 
+@media all and (max-width: 425px){
+.paypal-button {
+    text-align: center;
+    width: 100%;
+}
+.paypal-button-2 {
+    text-align: center;
+    width: 100%;
+}
+@media all and (max-width: 350px){
+.form-temp {
+    width: unset;
+    max-width: 300px;
+}
+h2 {
+    font-size: 29px;
+}
+.text-border {
+    left: 13%;
+}
+}
