@@ -29,7 +29,7 @@
 			<!--[if lte IE 8]><script src="/wp-content/themes/templvm/assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/wp-content/themes/templvm/assets/js/main.js"></script>
 			<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5923f166e4a2d866"></script>
+			<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5923f166e4a2d866"></script>-->
 			
 	<!-- templvm add END -->
 	<?php /* RSS и всякое */ ?>

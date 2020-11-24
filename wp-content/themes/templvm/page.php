@@ -9,6 +9,9 @@ get_header(); // подключаем header.php ?>
 <!-- temp -->
 
 <!-- test_page -->
+<div id="colleges-header">
+    <h1 class="text-h1-home">The first pvblic temple of roman tradition <br>bvilt since classic antiqvity</h1>
+</div>
 <div id="main" class="wrapper style1">
 	<div class="container">
 <!-- temp END-->
@@ -27,6 +30,9 @@ get_header(); // подключаем header.php ?>
 						
 						
 						<section id="content">
+                        <?php if(the_title('','',false)){ ?>
+                            <h2><?php the_title(); ?></h2>
+                        <?php } ?>
 						<?php the_content(); ?>
 						</section>
 				<!-- temp END-->
