@@ -4131,3 +4131,13 @@
 .caret{
 	display:none !important;
 }
+
+.dropotron.level-1{
+	overflow-y: scroll;
+	max-height: 400px;
+	direction: rtl;
+}
+
+.dropotron.level-1 > li {
+	direction: ltr;
+}
