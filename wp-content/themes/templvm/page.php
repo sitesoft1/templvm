@@ -12,6 +12,40 @@ get_header(); // подключаем header.php ?>
 <div id="colleges-header">
     <h1 class="text-h1-home">The first pvblic temple of roman tradition <br>bvilt since classic antiqvity</h1>
 </div>
+
+    <style>
+        
+        .my_wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: 200px;
+        }
+
+        @media screen and (max-width: 640px) {
+            .my_wrapper {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, minmax(100px, 1fr));
+            }
+        }
+
+        .item1{
+            background: #0A246A;
+        }
+
+        .item2{
+            background: #00bb00;
+        }
+        
+    </style>
+    
+    <div class="my_wrapper">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+    </div>
+
 <div id="main" class="wrapper style1">
 	<div class="container">
 <!-- temp END-->

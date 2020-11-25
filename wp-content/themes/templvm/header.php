@@ -13,7 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- templvm add -->
 	<meta property="og:image" content="/wp-content/themes/templvm/images/gratias_ago.jpg"/>
-	<link rel="stylesheet" href="/wp-content/themes/templvm/assets/css/p_main.css" />
+
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="/wp-content/themes/templvm/assets/css/p_main.css" />
+    
 	<!--[if lte IE 9]><link rel="stylesheet" href="/wp-content/themes/templvm/assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="/wp-content/themes/templvm/assets/css/ie8.css" /><![endif]-->
 		
@@ -28,7 +31,7 @@
 			<script src="/wp-content/themes/templvm/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="/wp-content/themes/templvm/assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="/wp-content/themes/templvm/assets/js/main.js"></script>
-			<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5923f166e4a2d866"></script>-->
 			
 	<!-- templvm add END -->
