@@ -47,18 +47,18 @@ get_header(); // подключаем header.php ?>
     </div>
     -->
 
-
 <div id="main" class="wrapper style1">
 	<div class="container">
 <!-- temp END-->
-  
 		<div class="my_wrapper row">
             <div class="col1">
                 <div class="left-sidebar-logo">
-                    <img src="<?php the_post_thumbnail_url(); ?>">
+                    <?php if( !empty(get_the_post_thumbnail()) ){ ?>
+                        <img src="<?php the_post_thumbnail_url(); ?>">
+                    <?php } ?>
                 </div>
+                
                 <div class="left-sidebar-content">
-                   <?php //var_dump(get_fields( get_the_ID() )); ?>
                    <?php $page_links = get_fields(get_the_ID()); ?>
                    <?php if(!empty($page_links)){ ?>
                        <ul class="collegium_sitebar_menu">

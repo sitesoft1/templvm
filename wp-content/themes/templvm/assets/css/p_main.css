@@ -3159,7 +3159,7 @@
 
 	.wrapper {
 		/*padding: 6.7em 0 4em 0;*/
-		padding: 1em 0 4em 0;
+		padding: 1.6em 0 4em 0;
 	}
 
 		.wrapper.style2 {
@@ -4172,7 +4172,7 @@
 .my_wrapper {
     width: 100%;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr;
 
@@ -4199,12 +4199,13 @@
 
 .col2{
     grid-area: c;
+	margin-top: 2.4em;
     /* background: #00bb00; */
 }
 
 .left-sidebar-logo{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .left-sidebar-content{
@@ -4213,9 +4214,13 @@
 
 .collegium_sitebar_menu{
 	list-style: none !important;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-right: 10px;
 }
 .collegium_sitebar_menu > li{
-	margin-top: 5px !important;
+	margin-top: 10px !important;
+	font-size: 20px !important;
 }
 .collegium_sitebar_menu > li > a{
 	color: #fff;
