@@ -30,6 +30,7 @@ get_header(); // подключаем header.php ?>
                        <?php foreach ($page_links as $name => $value){ ?>
                             <?php if(!empty($value['url']) and !empty($value['title'])){ ?>
                                 <li><a href="<?php echo $value['url']; ?>"><?php echo $value['title']; ?></a></li>
+                               <i class="fa fa-circle" aria-hidden="true"></i>
                             <?php } ?>
                        <?php } ?>
                        </ul>
