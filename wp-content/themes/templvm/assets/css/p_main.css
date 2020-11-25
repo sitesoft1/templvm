@@ -4210,4 +4210,16 @@
 .left-sidebar-content{
     background: rgba(120, 10, 9, 0.965);
 }
+
+.collegium_sitebar_menu{
+	list-style: none !important;
+}
+.collegium_sitebar_menu > li{
+	margin-top: 5px !important;
+}
+.collegium_sitebar_menu > li > a{
+	color: #fff;
+	border-bottom: none !important;
+
+}
 /* collegium page END */

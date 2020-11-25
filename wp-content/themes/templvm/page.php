@@ -58,7 +58,17 @@ get_header(); // подключаем header.php ?>
                     <img src="<?php the_post_thumbnail_url(); ?>">
                 </div>
                 <div class="left-sidebar-content">
-                    <?php get_sidebar(); // подключаем sidebar.php ?>
+                   <?php //var_dump(get_fields( get_the_ID() )); ?>
+                   <?php $page_links = get_fields(get_the_ID()); ?>
+                   <?php if(!empty($page_links)){ ?>
+                       <ul class="collegium_sitebar_menu">
+                       <?php foreach ($page_links as $name => $value){ ?>
+                            <?php if(!empty($value['url']) and !empty($value['title'])){ ?>
+                                <li><a href="<?php echo $value['url']; ?>"><?php echo $value['title']; ?></a></li>
+                            <?php } ?>
+                       <?php } ?>
+                       </ul>
+                   <?php } ?>
                 </div>
             </div>
             
