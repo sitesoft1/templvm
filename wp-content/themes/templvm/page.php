@@ -37,6 +37,7 @@ get_header(); // подключаем header.php ?>
                        <?php } ?>
                        </ul>
                    <?php } ?>
+                    <?php get_sidebar(); // подключаем sidebar.php ?>
                 </div>
             </div>
             
@@ -55,7 +56,6 @@ get_header(); // подключаем header.php ?>
 						<?php the_content(); ?>
 						</section>
 				<!-- temp END-->
-				
 					</article>
 				<?php endwhile; // конец цикла ?>
 			</div>

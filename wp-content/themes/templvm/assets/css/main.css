@@ -260,6 +260,20 @@
 					margin-left: 1em;
 				}
 
+				@media screen and (max-width: 696px) {
+					.text-h1-home{
+						font-size: 1.4em !important;
+						margin-top: 1em !important;
+						/*padding-top: 50px !important;*/
+					}
+				}
+
+				@media screen and (min-width: 697px) and (max-width: 799px) {
+					.text-h1-home{
+						margin-top: 1em !important;
+					}
+				}
+
 				@media screen and (max-width: 1125px) {
 					#header nav ul li {
 						margin-left: 0.2em !important;
