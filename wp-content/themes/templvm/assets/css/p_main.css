@@ -1578,7 +1578,8 @@
 	}
 
 	body, input, select, textarea {
-		color: rgba(0, 0, 0, 0.75); /* ОСНОВНИЙ ШРИФТ КОЛІР */
+		/* color: rgba(0, 0, 0, 0.75); */ /* ОСНОВНИЙ ШРИФТ КОЛІР */
+		color: #7E3937; /* ОСНОВНИЙ ШРИФТ КОЛІР */
 		font-family: "Palatino linotype", Roboto, Helvetica, sans-serif; /* ОСНОВНИЙ ШРИФТ СТОРІНКИ */
 		font-size: 15pt;
 		font-weight: 100;
@@ -2155,7 +2156,7 @@
 	}
 
 	header.major {
-		margin: 0 0 4em 0;
+		margin: 0 0 1em 0;
 		position: relative;
 		/* text-align: center; */
 	}
@@ -2170,7 +2171,7 @@
 		}
 		
 	h2.major {
-		margin: 0 0 4em 0;
+		margin: 0 0 1em 0;
 		position: relative;
 		text-align: center;
 	}
@@ -3770,7 +3771,7 @@
 			}
 
 			header.major {
-				margin: 0 0 2em 0;
+				margin: 0 0 1em 0;
 			}
 			
 			.p-form{
@@ -4214,8 +4215,8 @@
 
 .collegium_sitebar_menu{
 	list-style: none !important;
-	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-top: 17px;
+	padding-bottom: 35px;
 	padding-right: 10px;
 	text-align: center;
 	padding-left:0px;
@@ -4232,7 +4233,19 @@
 
 .collegium_sitebar_menu > .fa-circle{
 	color: #fff;
-	font-size: 15px;
-	margin-top: 15px;
+	font-size: 12px;
+	margin-top: 16px;
 }
 /* collegium page END */
+
+#content{
+	font-size: 16pt !important;
+}
+
+.major h1, h2, h3, h4, h5, h6{
+	color: #701515;
+}
+
+#main{
+	margin-bottom: -4em;
+}

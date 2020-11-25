@@ -260,6 +260,12 @@
 					margin-left: 1em;
 				}
 
+				@media screen and (max-width: 1125px) {
+					#header nav ul li {
+						margin-left: 0.2em !important;
+					}
+				}
+
 					#header nav ul li a, #header nav ul li span {
 						border: 0;
 						color: #a4acbf; /* колір лінк - головне меню */
@@ -312,7 +318,7 @@
 		max-width: 100%;
 	}
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1050px) {
 
 		/* Basic */
 

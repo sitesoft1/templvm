@@ -24,13 +24,15 @@ get_header(); // подключаем header.php ?>
                 </div>
                 
                 <div class="left-sidebar-content">
-                   <?php $page_links = get_fields(get_the_ID()); ?>
+                   <?php $page_links = get_fields(get_the_ID()); $cnt=0; ?>
                    <?php if(!empty($page_links)){ ?>
                        <ul class="collegium_sitebar_menu">
                        <?php foreach ($page_links as $name => $value){ ?>
                             <?php if(!empty($value['url']) and !empty($value['title'])){ ?>
-                                <li><a href="<?php echo $value['url']; ?>"><?php echo $value['title']; ?></a></li>
-                               <i class="fa fa-circle" aria-hidden="true"></i>
+                               <?php if($cnt>0){ ?>
+                                    <i class="fa fa-circle" aria-hidden="true"></i>
+                               <?php } $cnt++; ?>
+                            <li><a href="<?php echo $value['url']; ?>"><?php echo $value['title']; ?></a></li>
                             <?php } ?>
                        <?php } ?>
                        </ul>

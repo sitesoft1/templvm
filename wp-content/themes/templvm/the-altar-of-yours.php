@@ -87,7 +87,9 @@
 			<!--[if lte IE 8]><script src="/wp-content/themes/templvm/assets/js/ie/respond.min.js"></script><![endif]-->
 			 <script src="/wp-content/themes/templvm/assets/js/main.js"></script> 
 			<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-			<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5923f166e4a2d866"></script>
+			
+        <!--<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5923f166e4a2d866"></script>-->
+        
 			<script src="http://code.jquery.com/jquery-latest.js"></script>
 			<script src="/wp-content/themes/templvm/bootstrap/js/bootstrap.min.js"></script>
 		<!-- Scripts END -->
