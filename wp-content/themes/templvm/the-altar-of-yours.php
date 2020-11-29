@@ -132,6 +132,10 @@
 					</nav>	
 				</header>
 
+            <div id="colleges-header">
+                <h1 class="text-h1-home">The first pvblic temple of roman tradition <br>bvilt since classic antiqvity</h1>
+            </div>
+
 			<!-- Main -->
 				<div class="main" class="wrapper style1">
 					<div class="container">
@@ -139,7 +143,7 @@
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); // старт цикла ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // контэйнер с классами и id ?>
 						<header class="major">
-							<br><br><br><br><br><h2><?php the_title(); ?></h2>
+							<br><h2><?php the_title(); ?></h2>
 							<p></p>
 						</header>
 						
