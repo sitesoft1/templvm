@@ -25,15 +25,15 @@ get_header(); // подключаем header.php ?>
                 </div>
                 
                 <div class="left-sidebar-content">
-                   <?php $page_links = get_fields(get_the_ID()); $cnt=0; ?>
+                   <?php $page_links = get_field('left_menu'); ?>
                    <?php if(!empty($page_links)){ ?>
                        <ul class="collegium_sitebar_menu">
-                       <?php foreach ($page_links as $name => $value){ ?>
-                            <?php if(!empty($value['url']) and !empty($value['title'])){ ?>
+                       <?php foreach ($page_links as $value){ ?>
+                            <?php if(true){ ?>
                                <?php if($cnt>0){ ?>
                                     <i class="fa fa-circle" aria-hidden="true"></i>
                                <?php } $cnt++; ?>
-                            <li><a href="<?php echo $value['url']; ?>"><?php echo $value['title']; ?></a></li>
+                            <li><a href="<?php echo $value['link']['url']; ?>"><?php echo $value['link']['title']; ?></a></li>
                             <?php } ?>
                        <?php } ?>
                        </ul>
@@ -52,10 +52,23 @@ get_header(); // подключаем header.php ?>
 						<h2><?php the_title(); ?></h2>
 						</header>
 				<?php } ?>
-      
 						<section id="content">
 						<?php the_content(); ?>
-						</section>
+                       
+                       <!-- show attached files -->
+                        <?php $attach_documents = get_field( "attach_collegium_documents" ); ?>
+                        <?php if($attach_documents){ ?>
+                            <h3>Documents</h3>
+                            <ul id="documents">
+                            <?php foreach ($attach_documents as $document){ ?>
+                                <li class="collegium-file-li">
+                                    <a class="icon alt fa-file-o collegium-file-icon" target="_blank" href="<?php echo $document['file']['url']; ?>" download><?php echo $document['file']['title']; ?></a>
+                                </li>
+                            <?php } ?>
+                            </ul>
+                        <?php } ?>
+                        <!-- show attached files -->
+                        </section>
 				<!-- temp END-->
 					</article>
 				<?php endwhile; // конец цикла ?>

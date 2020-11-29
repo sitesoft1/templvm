@@ -4268,3 +4268,24 @@
 #main{
 	margin-bottom: -4em;
 }
+
+.collegium-file-icon{
+
+}
+
+.collegium-file-icon:before{
+	margin-right: 10px;
+}
+
+.collegium-file-li{
+	margin-bottom: 6px;
+	list-style: none;
+	padding-left: 0.5em;
+}
+
+#documents{
+
+}
+
+
+
