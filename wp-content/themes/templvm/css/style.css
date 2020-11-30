@@ -286,6 +286,7 @@ input[type="submit"],.agileits_copyright p a,a{
 	border: 3px solid #e44c65;
 	margin: 20px;
 }
+
 .text-h1-home{
 		font-family: TrajanProBold;
 		color: #88302f !important;
@@ -294,10 +295,43 @@ input[type="submit"],.agileits_copyright p a,a{
 
 		margin-bottom: 60px;
 	}
+
+.text-h1-home2{
+	font-family: TrajanProBold;
+	color: #88302f !important;
+	line-height: 1.6;
+	text-shadow: 0px 0px 6px #ffae58;
+	margin-top: -20px;
+	margin-bottom: 50px;
+}
+
+.text-h1-home3{
+	font-family: TrajanProBold;
+	color: #88302f !important;
+	line-height: 1.6;
+	text-shadow: 0px 0px 6px #ffae58;
+	margin-bottom: 50px;
+}
+
+a.unassigned{
+	background-color: #e44c65 !important;
+	color: #ffffff !important;
+	padding-right: 8px !important;
+	padding-left: 10px !important;
+}
+a.unassigned:hover{
+	background-color: #e44c65 !important;
+	color: #ffffff !important;
+	padding-right: 8px !important;
+	padding-left: 10px !important;
+}
+
 .paypal-button{
+	/*
     text-align: right;
     width: 50%;
     float: left;
+	*/
 }
 .paypal-button-2{
     text-align: center;

@@ -29,7 +29,7 @@ get_header(); // подключаем header.php ?>
                    <?php if(!empty($page_links)){ ?>
                        <ul class="collegium_sitebar_menu">
                        <?php foreach ($page_links as $value){ ?>
-                            <?php if(true){ ?>
+                            <?php if(!empty($value['link']['url']) and !empty($value['link']['title'])){ ?>
                                <?php if($cnt>0){ ?>
                                     <i class="fa fa-circle" aria-hidden="true"></i>
                                <?php } $cnt++; ?>
@@ -57,13 +57,15 @@ get_header(); // подключаем header.php ?>
                        
                        <!-- show attached files -->
                         <?php $attach_documents = get_field( "attach_collegium_documents" ); ?>
-                        <?php if($attach_documents){ ?>
+                        <?php if(!empty($attach_documents)){ ?>
                             <h3>Documents</h3>
                             <ul id="documents">
                             <?php foreach ($attach_documents as $document){ ?>
-                                <li class="collegium-file-li">
-                                    <a class="icon alt fa-file-o collegium-file-icon" target="_blank" href="<?php echo $document['file']['url']; ?>" download><?php echo $document['file']['title']; ?></a>
-                                </li>
+                                <?php if(!empty($document['file']['url']) and !empty($document['file']['title'])){ ?>
+                                    <li class="collegium-file-li">
+                                        <a class="icon alt fa-file-o collegium-file-icon" target="_blank" href="<?php echo $document['file']['url']; ?>" download><?php echo $document['file']['title']; ?></a>
+                                    </li>
+                                <?php } ?>
                             <?php } ?>
                             </ul>
                         <?php } ?>
