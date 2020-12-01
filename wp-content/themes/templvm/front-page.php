@@ -70,7 +70,7 @@
 <body <?php body_class(); // все классы для body ?>>
 <?php wp_body_open(); ?>
 
-			<!-- Header -->
+			<!-- Header. -->
 				<header id="header">
 					<h1 id="logo"><a href="/">TEMPLVM•ORG</a></h1>
 					
