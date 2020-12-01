@@ -1,0 +1,54 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="/wp-content/themes/templvm/images/gratias_ago.jpg"/>
+    
+    <link rel="stylesheet" href="/wp-content/themes/templvm/assets/css/p_main.css" />
+    
+	<!--[if lte IE 9]><link rel="stylesheet" href="/wp-content/themes/templvm/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/wp-content/themes/templvm/assets/css/ie8.css" /><![endif]-->
+  
+		<!--[if lte IE 8]><script src="/wp-content/themes/templvm/assets/js/ie/html5shiv.js"></script><![endif]-->
+			<script src="/wp-content/themes/templvm/assets/js/jquery.min.js"></script>
+			<script src="/wp-content/themes/templvm/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/wp-content/themes/templvm/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/wp-content/themes/templvm/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/wp-content/themes/templvm/assets/js/skel.min.js"></script>
+			<script src="/wp-content/themes/templvm/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/wp-content/themes/templvm/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/wp-content/themes/templvm/assets/js/main.js"></script>
+	<link rel="alternate" type="application/rdf+xml" title="RDF mapping" href="<?php bloginfo('rdf_url'); ?>">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss_url'); ?>">
+	<link rel="alternate" type="application/rss+xml" title="Comments RSS" href="<?php bloginfo('comments_rss2_url'); ?>">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+ 
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
+	<header id="header">
+	<h1 id="logo"><a href="/">TEMPLVM•ORG</a></h1>
+	
+		<nav id="nav">
+				<?php $args = array(
+								'theme_location' => 'top',
+								'container'=> false,
+						  		'menu_id' => 'top-nav-ul',
+						  		'items_wrap' => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
+								'menu_class' => 'top-menu',
+						  		'walker' => new bootstrap_menu(true)
+					  			);
+								wp_nav_menu($args);
+				?>		
+		</nav>
+	</header>

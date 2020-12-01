@@ -24,7 +24,7 @@ get_header(); // подключаем header.php ?>
 					
 					<!-- temp -->
 				<?php if(the_title('','',false)){ ?>
-						<header class="major">
+						<header class="major major-default-page">
 						<h2><?php the_title(); ?></h2>
 						</header>
 				<?php } ?>

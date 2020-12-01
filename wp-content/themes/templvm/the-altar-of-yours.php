@@ -142,7 +142,7 @@
 					
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); // старт цикла ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> <?php // контэйнер с классами и id ?>
-						<header class="major">
+						<header class="major major-default-page">
 							<br><h2><?php the_title(); ?></h2>
 							<p></p>
 						</header>
